@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barilla Sostenibilità</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-title" id="title">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Barilla_logo.png" alt="Logo Barilla"
+           onerror="this.style.display='none';document.getElementById('barilla-fallback').style.display='inline-block';"/>
+      <span class="logo-fallback" id="barilla-fallback" style="display:none;">BARILLA</span>
+      <span style="vertical-align:middle;">Sostenibilità</span>
+    </div>
+    <div class="nav-row">
+      <nav class="main-nav">
+        <a href="#report" id="nav-report">Report</a>
+        <span class="separator"></span>
+        <a href="#benefits" id="nav-benefits">Benefici</a>
+      </nav>
+      <button class="lang-switch" onclick="toggleLanguage()" id="lang-btn">ENG</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SOLO IMMAGINE FULL RECT -->
+    <section class="hero">
+      <img class="hero-img" src="img/hero-barilla.jpg" alt="Pasta Barilla originale">
+    </section>
+    <section class="intro-section" id="intro">
+      <h2 id="intro-title">La Sostenibilità per Barilla</h2>
+      <p id="intro-desc">
+        Barilla integra la sostenibilità in ogni aspetto della sua filiera,
+        promuovendo innovazione, inclusione sociale e rispetto per l’ambiente.<br>
+        <strong>Scopri la nostra filosofia prima di esplorare i benefici concreti.</strong>
+      </p>
+    </section>
+    <section id="report" class="report-section">
+      <h2 id="report-title">Report di Sostenibilità 2024</h2>
+      <p id="report-desc">Scarica il report di sostenibilità 2024 in italiano</p>
+     <a id="download-link"
+   class="download-button"
+   href="docs/2024_barilla_group_rapporto_sostenibilita_ita_interattivo.pdf"
+   download
+   aria-label="Scarica il Rapporto di Sostenibilità 2024 (ITA)">
+  <i class="fas fa-file-download"></i> Scarica (ITA)
+</a>
+
+    </section>
+    <div class="divider" id="divider"><span id="divider-text">“La sostenibilità è il nostro ingrediente principale.”</span></div>
+    <section class="values-section" id="valori">
+      <h3 id="valori-title">I Valori di Barilla</h3>
+      <p id="valori-desc">
+        Da sempre Barilla crede nella responsabilità sociale e ambientale.<br>
+        L’azienda investe in innovazione, qualità delle materie prime e rispetto delle persone e del territorio.<br>
+        <strong>Crediamo che fare impresa significhi creare valore condiviso e un impatto positivo per tutti.</strong>
+      </p>
+    </section>
+    <section id="benefits">
+      <div class="sustainability-icons" id="icons">
+        <div class="icon-box">
+          <i class="fas fa-leaf"></i>
+          <h3 id="benefit1-title">Ambiente</h3>
+          <p id="benefit1-text">Riduzione CO₂ e impatto ecologico controllato</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-users"></i>
+          <h3 id="benefit2-title">Comunità</h3>
+          <p id="benefit2-text">Progetti di inclusione e nutrizione sostenibile</p>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-box"></i>
+          <h3 id="benefit3-title">Packaging</h3>
+          <p id="benefit3-text">100% riciclabile, da fonti responsabili</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" aria-label="Torna su">↑</button>
+  <footer>
+    <span id="footer-text">&copy; 2025 Pagina realizzata per il Project Work - CdS Informatica per le Aziende Digitali. Tutti i diritti riservati.</span>
+  </footer>
+ <script src="js/script.js"></script>
+</body>
+</html>

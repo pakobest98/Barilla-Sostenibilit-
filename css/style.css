@@ -1,0 +1,301 @@
+:root {
+  --barilla-blue: #003893;
+  --barilla-red: #ed1c24;
+  --barilla-light: #0072ce;
+  --section-bg: #f5f5f5;
+  --text-main: #1a2330;
+  --white: #fff;
+  --section-radius: 20px;
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--section-bg);
+  color: var(--text-main);
+  margin: 0; padding: 0;
+  min-height: 100vh;
+}
+.main-header {
+  background: var(--white);
+  box-shadow: 0 2px 20px #00389311;
+  position: sticky; top: 0; z-index: 1000;
+  border-bottom: 2px solid #e2e8f0;
+}
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: var(--barilla-blue);
+  text-align: center;
+  margin: 0;
+  display: flex; align-items: center; justify-content: center;
+  gap: 1.2rem; line-height: 1.1; letter-spacing: 1px;
+  padding: 1.2rem 0 0.3rem 0;
+}
+.header-title img {
+  width: 62px; height: 46px;
+  border-radius: 12px; background: #fff;
+  border: 1.5px solid #e2e8f0;
+  object-fit: contain;
+  box-shadow: 0 1px 7px #00389330;
+}
+.logo-fallback {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; font-size: 2.1rem;
+  color: var(--barilla-blue);
+  padding: 7px 13px; border-radius: 10px;
+  background: #fff; border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px #aac5ff33;
+  letter-spacing: 2px;
+}
+.nav-row {
+  display: flex; justify-content: flex-end; align-items: center;
+  padding: 0.1rem 2.1rem 0.5rem 2.1rem;
+  gap: 2rem; font-size: 1.05rem;
+}
+.main-nav {
+  display: flex; align-items: center; gap: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.08rem;
+}
+.main-nav a {
+  color: var(--barilla-blue);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 12px 12px 0 0;
+  padding: 0.4rem 1.1rem;
+  transition: background 0.18s, color 0.16s;
+  border-bottom: 3px solid transparent;
+  letter-spacing: 0.02em;
+}
+.main-nav a.active, .main-nav a:focus {
+  background: var(--section-bg);
+  color: var(--barilla-red);
+  border-bottom: 3px solid var(--barilla-red);
+}
+.lang-switch {
+  margin-left: 1.1rem;
+  background: var(--barilla-blue);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700; font-size: 1.03rem;
+  padding: 0.35rem 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 1px 6px #00389322;
+  transition: background 0.15s;
+}
+.lang-switch:hover { background: var(--barilla-light);}
+.separator {
+  display: inline-block; width: 1px; height: 21px;
+  background: #e2e8f0; margin: 0 0.7rem;
+}
+/* HERO rettangolare con immagine */
+main {
+  max-width: 920px;
+  margin: auto;
+  padding: 0; /* NESSUN PADDING QUI! */
+}
+/* SOLO I BOX BIANCHI hanno padding e background bianco */
+.intro-section,
+.report-section,
+.values-section {
+  background: #fff;
+  padding: 2.1rem 1.3rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 16px #00389314;
+  margin: 2rem auto 2.1rem auto;
+  max-width: 850px;
+  text-align: center;
+}
+/* LA HERO NON HA PADDING E BACKGROUND BIANCO! */
+.hero {
+  width: 100%;
+  max-width: 850px;
+  height: 220px;
+  background: #003893;
+  margin: 2rem auto 2.1rem auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 24px #00389320;
+  position: relative;
+  overflow: hidden;
+  padding: 2.1rem 1.3rem; /* come gli altri box! */
+  /* così la hero ha esattamente la STESSA dimensione esterna dei box bianchi */
+}
+.hero-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  border-radius: 20px;
+}
+@media (max-width: 900px) {
+  main { padding: 0 0.5rem; }
+  .hero,
+  .intro-section,
+  .report-section,
+  .values-section {
+    max-width: 98vw;
+  }
+  .hero { height: 130px; border-radius: 12px; }
+}
+@media (max-width: 600px) {
+  .hero { height: 70px; border-radius: 8px;}
+}
+main { padding: 0 1.1rem; max-width: 920px; margin: auto;}
+.intro-section, .report-section, .values-section {
+  background: var(--white);
+  border-radius: var(--section-radius);
+  box-shadow: 0 2px 16px #00389314;
+  margin: 2rem auto 2.1rem auto;
+  padding: 2.1rem 1.3rem;
+  max-width: 850px;
+  text-align: center;
+}
+.intro-section h2 {
+  font-family: 'Montserrat', serif;
+  font-size: 1.45rem; color: var(--barilla-blue);
+  margin: 0.2rem 0 0.8rem 0; font-weight: 900;
+}
+.intro-section p {
+  font-size: 1.08rem; color: #234; margin:0 0 0.2rem 0;
+  font-style: italic; font-weight: 500;
+}
+.intro-section strong { color: var(--barilla-red);}
+.report-section {
+  box-shadow: 0 6px 32px #0038930b;
+  margin-bottom: 2.3rem; margin-top: 1.2rem;
+  position: relative;
+  transition: box-shadow 0.5s;
+}
+.report-section.spotlight {
+  box-shadow: 0 0 0 6px #ed1c2433, 0 10px 30px #00389319;
+  z-index: 10;
+  animation: shine 1s cubic-bezier(.8,0,.2,1) 1;
+}
+@keyframes shine {
+  0% { box-shadow: 0 0 0 18px #ed1c2400, 0 10px 32px #0038931e;}
+  60% { box-shadow: 0 0 0 18px #ed1c24aa, 0 10px 30px #0038931e;}
+  100% { box-shadow: 0 0 0 6px #ed1c2433, 0 10px 30px #00389319;}
+}
+.report-section h2 {
+  font-size: 1.63rem;
+  color: var(--barilla-blue);
+  margin-bottom: 1.08rem;
+  font-family: 'Montserrat', serif;
+  letter-spacing: 1px; font-weight: 900;
+}
+.report-section p {
+  font-size: 1.08rem;
+  color: var(--barilla-light);
+  max-width: 600px;
+  margin: 0 auto 1.3rem;
+  font-weight: 600;
+}
+.download-button {
+  display: inline-block;
+  padding: 1.07rem 2.05rem;
+  margin: 0 0.7rem;
+  background: var(--barilla-red);
+  color: #fff;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: bold;
+  font-size: 1.07rem;
+  text-decoration: none;
+  border-radius: 11px;
+  box-shadow: 0 2px 8px #ed1c2422;
+  position: relative;
+  border: none; outline: none; cursor: pointer;
+  transition: background 0.18s, transform 0.19s;
+}
+.download-button i {
+  margin-right: 10px;
+  font-size: 1.17em;
+  transition: transform 0.4s;
+  vertical-align: -2px;
+}
+.download-button:active { transform: scale(0.98);}
+.download-button:focus-visible {
+  outline: 2px solid var(--barilla-blue);
+  outline-offset: 2px;
+}
+.divider {
+  text-align: center;
+  margin: 2.4rem 0 1.7rem 0;
+}
+.divider span {
+  display: inline-block;
+  background: #e2e8f0;
+  color: var(--barilla-blue);
+  font-size: 1.13rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 16px;
+  font-family: 'Montserrat', serif;
+  font-style: italic; font-weight: 700;
+  letter-spacing: 0.11rem;
+}
+.values-section h3 {
+  font-family: 'Montserrat', serif;
+  color: var(--barilla-blue);
+  font-size: 1.17rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+.values-section p {
+  font-size: 1.04rem;
+  color: #334;
+  max-width: 520px;
+  margin: 0 auto;
+  font-style: italic;
+  font-weight: 500;
+}
+.sustainability-icons {
+  display: flex; flex-wrap: wrap; justify-content: space-around;
+  gap: 1.1rem; margin: 2.1rem auto 0 auto; max-width: 900px;
+}
+.icon-box {
+  flex: 1 1 200px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.35rem 0.8rem;
+  text-align: center;
+  box-shadow: 0 3px 12px #00389309;
+  transition: transform 0.16s, background 0.13s;
+  margin: 0.5rem 0;
+  position: relative;
+}
+.icon-box:hover { transform: translateY(-6px) scale(1.03); background: #f5f5f5;}
+.icon-box i {
+  font-size: 2.1rem; color: var(--barilla-red); margin-bottom: 0.6rem; transition: color 0.18s;
+}
+.icon-box h3 {
+  font-size: 1.08rem;
+  margin-bottom: 0.3rem;
+  font-family: 'Montserrat', serif; font-weight: 800; letter-spacing: 0.5px;
+}
+.icon-box p { font-size: 0.99rem; color: #344; }
+.back-to-top {
+  position: fixed; bottom: 17px; right: 17px;
+  background: var(--barilla-blue); color: white; border: none;
+  padding: 0.65rem 1.1rem; border-radius: 50%;
+  font-size: 1.1rem; cursor: pointer;
+  box-shadow: 0 3px 10px #00389324;
+  transition: background 0.21s;
+  z-index: 2000;
+}
+.back-to-top:hover { background: var(--barilla-red); }
+footer {
+  text-align: center;
+  padding: 1.2rem 1rem;
+  font-size: 0.93rem;
+  color: #555;
+  background-color: #fff;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 2.1rem;
+  font-weight: 500;
+}
