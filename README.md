@@ -18,7 +18,7 @@ L’obiettivo del progetto è stato lo sviluppo di una **pagina web statica** (H
 - **Accessibilità di base**, grazie a HTML semantico, contrasti adeguati, testi alternativi e focus visibile
 
 ## Demo online
-👉 [Apri la demo su GitHub Pages](https://pakobest98.github.io/Barilla-Sostenibilit-/)  
+👉 [Apri la demo su GitHub Pages](https://pakobest98.github.io/Barilla-Sostenibilita/)  
 
 ## Come eseguire in locale
 1. Scarica o clona il repository
