@@ -91,13 +91,13 @@ body {
   display: inline-block; width: 1px; height: 21px;
   background: #e2e8f0; margin: 0 0.7rem;
 }
-/* HERO rettangolare con immagine */
+/* HERO */
 main {
   max-width: 920px;
   margin: auto;
-  padding: 0; /* NESSUN PADDING QUI! */
+  padding: 0;
 }
-/* SOLO I BOX BIANCHI hanno padding e background bianco */
+
 .intro-section,
 .report-section,
 .values-section {
@@ -109,7 +109,7 @@ main {
   max-width: 850px;
   text-align: center;
 }
-/* LA HERO NON HA PADDING E BACKGROUND BIANCO! */
+
 .hero {
   width: 100%;
   max-width: 850px;
@@ -120,8 +120,8 @@ main {
   box-shadow: 0 6px 24px #00389320;
   position: relative;
   overflow: hidden;
-  padding: 2.1rem 1.3rem; /* come gli altri box! */
-  /* così la hero ha esattamente la STESSA dimensione esterna dei box bianchi */
+  padding: 2.1rem 1.3rem; 
+  
 }
 .hero-img {
   position: absolute;
