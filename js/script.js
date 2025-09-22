@@ -8,7 +8,7 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('DOMContentLoaded', revealOnScroll);
 
-// SCROLL REPORT CENTRATO ULTRA RAPIDO E EVIDENZA
+// SCROLL REPORT CENTRATO 
 document.getElementById('nav-report').addEventListener('click', function(e){
   e.preventDefault();
   const reportSec = document.getElementById('report');
